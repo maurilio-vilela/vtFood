@@ -48,9 +48,10 @@
 </main>
 
 <style>
+	@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Poppins:wght@300&family=Roboto:wght@300;400&display=swap');
 	main{
 		color:#FFFFFF;
-		
+		font-family: 'Roboto', 'Helvetica';
 	}
 	:global(.app){
 		height: 100vh;
@@ -65,7 +66,7 @@
 	:global(.content){
 		display: flex;
 		flex-wrap: wrap;
-		background-color: #0e0d0d;
+		background-color: #201e1e;
 		padding: 15px;
 	}
 	:global(.content-pages){
