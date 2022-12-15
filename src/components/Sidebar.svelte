@@ -1,62 +1,62 @@
 <script lang="ts">
-    import { Col, Icon, Row } from 'sveltestrap';
+    import { Container, Icon, Nav, Navbar, NavbarBrand, NavItem, NavLink } from 'sveltestrap';
 </script>
 
-        <nav class="menu-nav">
-            <div class="navbar">
-                <div class="containter">
-                    <a href="/#" class="navbar-brand">
-                        <Icon name="bar-chart-steps" />
-                    </a>
-                </div>
-            </div>
-        </nav>
+<div class="menu-nav">
+    <Navbar>
+        <Container>
+            <NavbarBrand href="/">
+                <Icon name="bar-chart-steps" />
+            </NavbarBrand>
+        </Container>
+    </Navbar>
+</div>
 
-        <nav class="menu">
-            <ul class="nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="/">
-                        <Icon name="bag-plus-fill" />
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/#">
-                        <Icon name="bag-check-fill" />
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/#">
-                        <Icon name="bag-x-fill" />
-                    </a>
-                </li>
-            </ul>
-        </nav>
+<div class="menu">
+    <Nav>
+        <NavItem>
+            <NavLink active href="/products">
+                <i class="fa-duotone fa-burger-cheese"></i>
+            </NavLink>
+        </NavItem>
+        <NavItem>
+            <NavLink href="/#">
+                <i class="fa-duotone fa-pizza"></i>
+            </NavLink>
+        </NavItem>
+        <NavItem>
+            <NavLink href="/#">
+                <i class="fa-duotone fa-soft-serve"></i>
+            </NavLink>
+        </NavItem>
+    </Nav>
+</div>
 
 <style>
     .menu{
         display: flex;
         align-self: flex-start;
     }
-    .menu a{
+    :global(.menu a){
         color: #FFFFFF;
         font-size: 3.2rem;
 
     }
-    .menu a:hover{
+    :global(.menu a:hover){
         color: #FFC43D;
     }
-    .menu a:active{
+    :global(.menu a:active){
         color: #FFC43D;
     }
     .menu-nav{
         display: flex;
         align-self: flex-start;
     }
-    .menu-nav a{
+    :global(.menu-nav a){
         color: #FFFFFF;
         font-size: 2rem;
     }
-    .menu-nav a:hover{
+    :global(.menu-nav a:hover){
         color: #FFC43D;
     }
 </style>
