@@ -21,8 +21,8 @@
 <main>
 	<Container fluid>
 		<Row class="app">
-			<Col xs="1" class="sidebar">
-				<Container fluid>
+			<Col xs="1" class="bg-danger">
+				<Container fluid class="sidebar">
 					<Sidebar />
 				</Container>
 			</Col>
@@ -57,9 +57,10 @@
 	}
 	:global(.sidebar){
 		display: flex;
-		flex-direction: column;
-		background-color: #d12020;
 		color: #FFFFFF;
+		height: 100vh;
+		justify-content: center;
+		flex-wrap: wrap;
 		}
 	:global(.content){
 		display: flex;
